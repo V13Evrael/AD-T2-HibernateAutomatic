@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 8 ene. 2020 14:17:41 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="ad_tema2" dynamic-insert="false" dynamic-update="false" mutable="true" name="es.studium.ClasePoJo.Perros" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="perros">
+        <id name="idPerro" type="int">
+            <column name="idPerro"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="razaPerro" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="razaPerro" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="tamanoPerro" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="tamanoPerro" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="edadPerro" optimistic-lock="true" type="int" unique="false">
+            <column name="edadPerro" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="colorPerro" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="colorPerro" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
